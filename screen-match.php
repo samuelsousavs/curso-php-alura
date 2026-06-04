@@ -10,5 +10,5 @@
     echo "\nNota do filme: $notaFilme"
     // Com aspas simples ele nao interpreta nada
     // Com aspas duplas ele interpreta
-
-?>
+    
+?>  
