@@ -1,19 +1,14 @@
 <?php
-    echo 'Bem vindo(a) ao screen Match!
-    ';
-    $nomeFilme = 'Top Gun - Maverick
-    '; 
-    // Sintaxe da Atribuição de uma Variavel
+    echo 'Bem vindo(a) ao screen Match!';
+    $nomeFilme = "\nTop Gun - Maverick"; 
     $anoLancamento = 2022;
     $notaFilme = 8.8;
     $incluidoNoPlano = True; 
     echo $nomeFilme; 
 
-    // Operadores Logicos 
-    $nota1 = 2;
-    $nota2 = 33; 
-    $nota3 = 12; 
-    $mediaNotas = ($nota1 + $nota2 + $nota3) / 3;
-    echo 'Media das Notas: ' . $mediaNotas; 
+    echo "\nNota do Filme: " . $notaFilme; 
+    echo "\nNota do filme: $notaFilme"
+    // Com aspas simples ele nao interpreta nada
+    // Com aspas duplas ele interpreta
 
 ?>
