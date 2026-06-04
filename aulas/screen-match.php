@@ -1,5 +1,5 @@
 <?php
-$nome = $argv[1] ?? 2022;
+$nome = 2022;
 echo 'Bem vindo(a) ao screen Match!';
 
 $nomeFilme = "Top Gun - Maverick"; 
@@ -27,5 +27,14 @@ $genero = match($nomeFilme) {
     "Se beber nao case" => "Comedia",
     default => "Genero desconhecido"
 };
-echo "\nGenero do Filme: $genero"
+echo "\nGenero do Filme: $genero";
+
+$somaDeNotas = 0; 
+$quantidadeDeNotas = $argc - 1;
+for ($contador = 1; $contador < $argc; $contador++) {
+    $somaDeNotas += $argv[contador];
+}
+$notaFilme = $somaDeNotas / $quantidadeDeNotas;
+
+
 ?>  
