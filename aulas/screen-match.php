@@ -1,11 +1,15 @@
 <?php
 $nome = $argv[1] ?? 2022;
 echo 'Bem vindo(a) ao screen Match!';
-$nomeFilme = "\nTop Gun - Maverick"; 
+
+$nomeFilme = "Top Gun - Maverick"; 
+$nomeFilme = "Thor: Ragnarok"; 
+$nomeFilme = "Se beber nao case"; 
+
 $anoLancamento = 2021;
 $notaFilme = 8.8;
 $incluidoNoPlano = True; 
-echo $nomeFilme; 
+echo "\nNome do Filme: $nomeFilme"; 
 
 echo "\nNota do Filme: " . $notaFilme; 
 echo "\nNota do filme: $notaFilme";
@@ -17,5 +21,11 @@ if ($anoLancamento > 2022) {
 } else {
     echo "\nEsse filme não é um lançamento";
 }
-
+$genero = match($nomeFilme) {
+    "Top Gun - Maverick" => "Ação",
+    "Thor: Ragnarok" => "Super-heroi",
+    "Se beber nao case" => "Comedia",
+    default => "Genero desconhecido"
+};
+echo "\nGenero do Filme: $genero"
 ?>  
