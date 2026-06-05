@@ -21,6 +21,7 @@ if ($anoLancamento > 2022) {
 } else {
     echo "\nEsse filme não é um lançamento";
 }
+
 $genero = match($nomeFilme) {
     "Top Gun - Maverick" => "Ação",
     "Thor: Ragnarok" => "Super-heroi",
