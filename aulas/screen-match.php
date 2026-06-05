@@ -29,12 +29,24 @@ $genero = match($nomeFilme) {
 };
 echo "\nGenero do Filme: $genero";
 
-$somaDeNotas = 0; 
-$quantidadeDeNotas = $argc - 1;
-for ($contador = 1; $contador < $argc; $contador++) {
-    $somaDeNotas += $argv[contador];
-}
-$notaFilme = $somaDeNotas / $quantidadeDeNotas;
+// $somaDeNotas = 0; 
+// $quantidadeDeNotas = 4;
+// for ($contador = 1; $contador < $argc; $contador++) {
+//     $somaDeNotas += $argv[contador];
+// }
+// $notaFilme = $somaDeNotas / $quantidadeDeNotas;
+
+$filme = [
+    "nome" => "Thor: Ragnarok",
+    "ano" => 2021, 
+    "nota" => 7.8, 
+    "genero" => "Super-Heroi"
+]; 
+
+echo "\nGenero do Filme: $filme[genero]";
+echo "\nNome do Filme: $filme[nome]";
+
+
 
 
 ?>  
